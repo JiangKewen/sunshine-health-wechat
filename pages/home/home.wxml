@@ -1,0 +1,97 @@
+<!--pages/home/home.wxml-->
+<view class="home page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
+
+  <view class="home-title" style="height: {{(top + height) + 'px' }}">
+    <view class="home-title-text">美年大健康</view>
+  </view>
+
+  <view class="home-add">
+    <image class="home-add-img" src="/assets/png/add.png" mode="aspectFill"></image>
+  </view>
+
+  <view class="home-main">
+    <view class="home-main-item">
+      <image class="home-main-img" src="/assets/png/预约.png" mode="aspectFit"></image>
+      <view class="home-main-info">
+        <view class="home-main-title">预约体检</view>
+        <view class="home-main-text">一站式预约体检</view>
+      </view>
+    </view>
+    <view class="home-main-item" bindtap="goGet">
+      <image class="home-main-img" src="/assets/png/查询报告.png" mode="aspectFit"></image>
+      <view class="home-main-info">
+        <view class="home-main-title">查看报告</view>
+        <view class="home-main-text">最全面报告解读</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="home-dingzhi">
+    <view class="home-dingzhi-item">
+      <view class="home-dingzhi-title">加项定制</view>
+      <view class="home-dingzhi-text">体检更全面</view>
+    </view>
+    <view class="home-dingzhi-item">
+      <view class="home-dingzhi-title">异常跟踪</view>
+      <view class="home-dingzhi-text">健康风险变化</view>
+    </view>
+  </view>
+
+  <view class="home-self">
+    <view class="home-self-title">个性化服务</view>
+    <view class="home-self-body">
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <view class="home-self-text">检前问卷</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <view class="home-self-text">自助登记</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <view class="home-self-text">实时结果</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="home-self home-book">
+    <view class="home-self-title">健康宝典</view>
+    <view class="home-self-body home-book-body">
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/人物.png"></image>
+        <view class="home-self-text">失眠</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/牙齿.png"></image>
+        <view class="home-self-text">脱发</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <view class="home-self-text">骨质疏松</view>
+      </view>
+      <view class="home-self-item home-book-item">
+        <image class="home-self-img" src="/assets/png/肠胃.png"></image>
+        <view class="home-self-text">中风</view>
+      </view>
+    </view>
+    <view class="home-self-body home-book-body">
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/人物.png"></image>
+        <view class="home-self-text">失眠</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/牙齿.png"></image>
+        <view class="home-self-text">脱发</view>
+      </view>
+      <view class="home-self-item">
+        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <view class="home-self-text">骨质疏松</view>
+      </view>
+      <view class="home-self-item home-book-item">
+        <image class="home-self-img" src="/assets/png/肠胃.png"></image>
+        <view class="home-self-text">中风</view>
+      </view>
+    </view>
+  </view>
+</view>

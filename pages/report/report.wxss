@@ -1,0 +1,123 @@
+/* pages/report/report.wxss */
+
+.report {
+  background: rgb(245,245,245);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 获取报告 */
+.report-function {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+.report-f-item {
+  border-radius: 10rpx;
+  background: #fff;
+  padding: 20rpx 56rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.report-f-img {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}
+.report-f-text {
+  font-size: 26rpx;
+  color: #555;
+}
+
+/* 全部报告 */
+.report-status {
+  margin-top: 60rpx;
+}
+.report-status-title {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.report-status-name {
+  font-size: 36rpx;
+  font-weight: 600;
+  padding: 12rpx 50rpx;
+  border: 4rpx solid rgb(52, 167, 234);
+  border-radius: 50rpx;
+  display: inline-block;
+  margin-top: 26rpx;
+}
+
+.report-all {
+  margin-top: 46rpx;
+}
+.report-time {
+  color: #888;
+  font-size: 28rpx;
+}
+.report-info {
+  border-radius: 8rpx;
+  background: #fff;
+  margin-top: 30rpx;
+  padding: 33rpx 30rpx;
+}
+.report-info-names {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.report-info-names-left {
+  display: flex;
+  align-items: center;
+}
+.report-name-img {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 50%;
+  margin-right: 13rpx;
+}
+.report-info-names-right {
+  border-radius: 9rpx;
+  font-size: 26rpx;
+  color: rgb(52, 167, 234);
+  border: 2rpx solid  rgb(52, 167, 234);
+  padding: 5rpx 16rpx;
+}
+.report-title {
+  font-size: 50rpx;
+  color: rgb(32, 162, 238);
+  margin: 30rpx 0 40rpx 0;
+  font-weight: 600;
+}
+.report-form-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.report-form-label {
+  color: #777;
+  font-size: 29rpx;
+  margin-right: 20rpx;
+}
+.report-form-text {
+  font-size: 29rpx;
+  font-weight: 600;
+}
+.report-btn {
+  text-align: center;
+  background: rgb(9, 149, 231);
+  color: white;
+  padding: 17rpx 0;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  font-size: 35rpx;
+}
+
+
+.report-none {
+  margin-top: 26rpx;
+  text-align: center;
+  color: #d5d3d3;
+  font-size: 22rpx;
+}

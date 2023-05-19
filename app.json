@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/report/report",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/get/get"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./assets/test/icon-black.png",
+        "selectedIconPath": "./assets/test/icon-blue.png"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "text": "报告",
+        "iconPath": "./assets/test/icon-black.png",
+        "selectedIconPath": "./assets/test/icon-blue.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./assets/test/icon-black.png",
+        "selectedIconPath": "./assets/test/icon-blue.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "富阳健康体检医院",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<!--pages/get/get.wxml-->
+<view class="get page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
+
+  <view class="page-title" style="height: {{(top + height) + 'px' }}">
+    <view>查找报告</view>
+  </view>
+</view>
+

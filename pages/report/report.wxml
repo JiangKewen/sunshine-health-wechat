@@ -1,0 +1,76 @@
+<!--pages/report/report.wxml-->
+<view class="report page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
+
+  <view class="page-title" style="height: {{(top + height) + 'px' }}">
+    <view>报告</view>
+  </view>
+
+  <view class="report-function">
+    <view class="report-f-item">
+      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <view class="report-f-text">获取报告</view>
+    </view>
+    <view class="report-f-item">
+      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <view class="report-f-text">专家解读</view>
+    </view>
+    <view class="report-f-item">
+      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <view class="report-f-text">异常跟踪</view>
+    </view>
+  </view>
+
+  <view class="report-status">
+    <view class="report-status-title">全部报告（2）</view>
+    <view class="report-status-name">孙悟空</view>
+  </view>
+
+  <view class="report-all">
+    <view class="report-item">
+      <view class="report-time">
+        2023年
+      </view>
+      <view class="report-info">
+        <view class="report-info-names">
+          <view class="report-info-names-left">
+            <image class="report-name-img" src="/assets/png/人物.png"></image>
+            <view class="report-name-text">孙悟空</view>
+          </view>
+          <view class="report-info-names-right">PDF</view>
+        </view>
+        <view class="report-title">2023年度健康手册</view>
+        <view class="report-form-item">
+          <view class="report-form-label">日期</view>
+          <view class="report-form-text">2023年5月19日</view>
+        </view>
+        <view class="report-form-item">
+          <view class="report-form-label">地址</view>
+          <view class="report-form-text">富阳健康体检医院</view>
+        </view>
+        <view class="report-btn" bindtap="readPdf">立即查看</view>
+      </view>
+      <view class="report-info">
+        <view class="report-info-names">
+          <view class="report-info-names-left">
+            <image class="report-name-img" src="/assets/png/人物.png"></image>
+            <view class="report-name-text">孙悟空</view>
+          </view>
+          <view class="report-info-names-right">PDF</view>
+        </view>
+        <view class="report-title">2023年度健康手册</view>
+        <view class="report-form-item">
+          <view class="report-form-label">日期</view>
+          <view class="report-form-text">2023年5月20日</view>
+        </view>
+        <view class="report-form-item">
+          <view class="report-form-label">地址</view>
+          <view class="report-form-text">富阳健康体检医院</view>
+        </view>
+        <view class="report-btn" bindtap="readPdf">立即查看</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="report-none">已获取所有报告</view>
+</view>
+

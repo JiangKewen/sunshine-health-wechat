@@ -1,0 +1,129 @@
+/* pages/home/home.wxss */
+
+/* 标题 */
+.home-title {
+  font-weight: 600;
+  font-size: 42rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 0 10rpx 2rpx #eee;
+  padding-bottom: 20rpx;
+  padding-left: 4vw;
+}
+
+.home {
+  background: white;
+}
+
+/* 广告 */
+.home-add {
+  height: 13vh;
+  overflow: hidden;
+}
+.home-add-img {
+  height: 10vh;
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+/* 预约体检 */
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(248, 247, 247);
+  border-radius: 12rpx;
+  padding: 20rpx 0 40rpx 0;
+}
+.home-main-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20rpx;
+}
+.home-main-img {
+  /* TODO 宽高待定 */
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 8rpx;
+}
+.home-main-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+}
+.home-main-text {
+  font-size: 22rpx;
+  color: #4d4d4d;
+}
+
+/* 加项定制 */
+.home-dingzhi {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.home-dingzhi-item {
+  flex: auto;
+  background: rgb(242, 244, 250);
+  border-radius: 12rpx;
+  padding: 32rpx 40rpx;
+}
+.home-dingzhi-item:last-child {
+  margin-left: 20rpx;
+  background: rgb(255, 244, 250);
+}
+.home-dingzhi-title {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.home-dingzhi-text {
+  font-size: 26rpx;
+  color: #4d4d4d;
+  margin-top: 10rpx;
+}
+
+/* 个性化服务 */
+.home-self {
+  margin-top: 60rpx;
+}
+.home-self-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 50rpx;
+}
+.home-self-body {
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx 30rpx 20rpx;
+}
+.home-self-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 70rpx;
+}
+.home-self-img {
+  width: 85rpx;
+  height: 85rpx;
+}
+.home-self-text {
+  margin-top: 13rpx;
+  font-size: 24rpx;
+}
+
+/* 健康宝典 */
+.home-book-body {
+  justify-content: space-between;
+}
+.home-book-body:not(:first-child) {
+  margin-top: 30rpx;
+}
+.home-book-item {
+  margin-right: 0;
+}
