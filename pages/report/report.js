@@ -1,4 +1,21 @@
 // pages/report/report.js
+
+// 对象转数组
+const result = data => {
+  if (!data || data.length === 0) {
+    return []
+  }
+  return data.reduce((acc, obj) => {
+    const index = acc.findIndex(item => item[0].year === obj.year);
+    if (index !== -1) {
+      acc[index].push(obj);
+    } else {
+      acc.push([obj]);
+    }
+    return acc;
+  }, []);
+}
+
 Page({
 
   /**
@@ -7,6 +24,9 @@ Page({
   data: {
     top: 0,
     height: 0,
+
+    storage: JSON.parse(wx.getStorageSync('report') || '[]'),
+    reports: result(JSON.parse(wx.getStorageSync('report') || '[]')),
   },
 
   /**
@@ -14,6 +34,13 @@ Page({
    */
   onLoad(options) {
 
+    this.setData({
+      storage: JSON.parse(wx.getStorageSync('report') || '[]')
+    })
+
+    this.setData({
+      reports: result(JSON.parse(wx.getStorageSync('report') || '[]'))
+    })
   },
 
   /**
@@ -74,7 +101,7 @@ Page({
   readPdf() {
     console.log('点击');
     wx.downloadFile({
-      url: 'https://oss.sunshine.xin/upload/dev/syrma-bankruptcy-api/pdf/02fdce78662249d9adccf4a1257a9dd7.pdf',
+      url: 'https://jiajianup.top/upload/dev/sunshine-health-examination/default/9c8d1c1ff3414556bdbd8cba81d0d60b.png',
       filePath: wx.env.USER_DATA_PATH + "/" + '孙悟空' + ".pdf",
       success(res) {
         console.log('res1', res);
@@ -93,6 +120,12 @@ Page({
       fail(err) {
         console.log('err', err.message);
       }
+    })
+  },
+
+  goGet() {
+    wx.navigateTo({
+      url: '/pages/get/get',
     })
   }
 })

@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/home1/team.js
 Page({
 
   /**
@@ -71,35 +71,9 @@ Page({
 
   },
 
-  goGet() {
-    wx.navigateTo({
-      url: '/pages/get/get',
-    })
-    // wx.switchTab({
-    //   url: '/pages/report/report'
-    // })
-  },
-
-  goHome1() {
-    wx.navigateTo({
-      url: '/pages/home1/team',
+  goBack() {
+    wx.switchTab({
+      url: '/pages/home/home',
     })
   },
-  goHome2() {
-    wx.navigateTo({
-      url: '/pages/home2/help',
-    })
-  },
-  goDoctor1(e) {
-    const id = e.currentTarget.dataset['index']
-    wx.navigateTo({
-      url: '/pages/doctor1/index?id='+id,
-    })
-  },
-  goDoctor2(e) {
-    const id = e.currentTarget.dataset['index']
-    wx.navigateTo({
-      url: '/pages/doctor2/index?id='+id,
-    })
-  }
 })

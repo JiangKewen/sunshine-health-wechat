@@ -5,7 +5,11 @@
     "pages/my/my",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/get/get"
+    "pages/get/get",
+    "pages/home1/team",
+    "pages/home2/help",
+    "pages/doctor1/index",
+    "pages/doctor2/index"
   ],
   "tabBar": {
     "list": [

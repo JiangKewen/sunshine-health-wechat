@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    top: 0,
+    height: 0,
 
+    phoneNumber: '1234567890',
   },
 
   /**
@@ -26,7 +29,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    const res = wx.getMenuButtonBoundingClientRect()
+    const top = res.top
+    const height = res.height
+    this.setData({
+      top,
+      height
+    })
   },
 
   /**

@@ -2,11 +2,22 @@
 <view class="home page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
 
   <view class="home-title" style="height: {{(top + height) + 'px' }}">
-    <view class="home-title-text">美年大健康</view>
+    <view class="home-title-text">富阳健康体检医院</view>
   </view>
 
   <view class="home-add">
-    <image class="home-add-img" src="/assets/png/add.png" mode="aspectFill"></image>
+    <!-- <image class="home-add-img" src="/assets/png/add.png" mode="aspectFill"></image> -->
+    <view class="home-big-line">
+      <view class="home-big-left">
+        欢迎来到
+      </view>
+      <view class="home-big">
+        富阳体检医院
+      </view>
+    </view>
+    <view class="home-big-line home-big-line2">
+      专注您的健康，打造全面的体检服务！
+    </view>
   </view>
 
   <view class="home-main">
@@ -14,83 +25,83 @@
       <image class="home-main-img" src="/assets/png/预约.png" mode="aspectFit"></image>
       <view class="home-main-info">
         <view class="home-main-title">预约体检</view>
-        <view class="home-main-text">一站式预约体检</view>
+        <view class="home-main-text">便捷预约</view>
       </view>
     </view>
     <view class="home-main-item" bindtap="goGet">
       <image class="home-main-img" src="/assets/png/查询报告.png" mode="aspectFit"></image>
       <view class="home-main-info">
-        <view class="home-main-title">查看报告</view>
-        <view class="home-main-text">最全面报告解读</view>
+        <view class="home-main-title">查询报告</view>
+        <view class="home-main-text">轻松查看</view>
       </view>
     </view>
   </view>
 
   <view class="home-dingzhi">
-    <view class="home-dingzhi-item">
-      <view class="home-dingzhi-title">加项定制</view>
-      <view class="home-dingzhi-text">体检更全面</view>
+    <view class="home-dingzhi-item" bindtap="goHome1">
+      <view class="home-dingzhi-title">专家团队</view>
+      <view class="home-dingzhi-text">专业的医疗服务</view>
     </view>
-    <view class="home-dingzhi-item">
-      <view class="home-dingzhi-title">异常跟踪</view>
-      <view class="home-dingzhi-text">健康风险变化</view>
+    <view class="home-dingzhi-item" bindtap="goHome2">
+      <view class="home-dingzhi-title">呵护健康</view>
+      <view class="home-dingzhi-text">个性化的健康建议</view>
     </view>
   </view>
 
   <view class="home-self">
-    <view class="home-self-title">个性化服务</view>
+    <view class="home-self-title">资深医生和专业技术人员</view>
     <view class="home-self-body">
-      <view class="home-self-item">
+      <view class="home-self-item" bindtap="goDoctor1" data-index="1">
         <image class="home-self-img" src="/assets/png/预约.png"></image>
-        <view class="home-self-text">检前问卷</view>
+        <view class="home-self-text">医学影像诊断</view>
       </view>
-      <view class="home-self-item">
+      <view class="home-self-item" bindtap="goDoctor1" data-index="2">
         <image class="home-self-img" src="/assets/png/预约.png"></image>
-        <view class="home-self-text">自助登记</view>
+        <view class="home-self-text">实验室检验</view>
       </view>
-      <view class="home-self-item">
+      <view class="home-self-item" bindtap="goDoctor1" data-index="3">
         <image class="home-self-img" src="/assets/png/预约.png"></image>
-        <view class="home-self-text">实时结果</view>
+        <view class="home-self-text">专科医疗服务</view>
       </view>
     </view>
   </view>
 
   <view class="home-self home-book">
-    <view class="home-self-title">健康宝典</view>
+    <view class="home-self-title">健康资讯</view>
     <view class="home-self-body home-book-body">
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="1" class="home-self-item">
         <image class="home-self-img" src="/assets/png/人物.png"></image>
-        <view class="home-self-text">失眠</view>
+        <view class="home-self-text">饮食与营养</view>
       </view>
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="2" class="home-self-item">
         <image class="home-self-img" src="/assets/png/牙齿.png"></image>
-        <view class="home-self-text">脱发</view>
+        <view class="home-self-text">健身与运动</view>
       </view>
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="3" class="home-self-item">
         <image class="home-self-img" src="/assets/png/预约.png"></image>
-        <view class="home-self-text">骨质疏松</view>
+        <view class="home-self-text">心理健康</view>
       </view>
-      <view class="home-self-item home-book-item">
+      <view bindtap="goDoctor2" data-index="4" class="home-self-item home-book-item">
         <image class="home-self-img" src="/assets/png/肠胃.png"></image>
-        <view class="home-self-text">中风</view>
+        <view class="home-self-text">疾病预防</view>
       </view>
     </view>
     <view class="home-self-body home-book-body">
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="5" class="home-self-item">
         <image class="home-self-img" src="/assets/png/人物.png"></image>
-        <view class="home-self-text">失眠</view>
+        <view class="home-self-text">慢性病管理</view>
       </view>
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="6" class="home-self-item">
         <image class="home-self-img" src="/assets/png/牙齿.png"></image>
-        <view class="home-self-text">脱发</view>
+        <view class="home-self-text">妇女健康</view>
       </view>
-      <view class="home-self-item">
+      <view bindtap="goDoctor2" data-index="7" class="home-self-item">
         <image class="home-self-img" src="/assets/png/预约.png"></image>
-        <view class="home-self-text">骨质疏松</view>
+        <view class="home-self-text">儿童健康</view>
       </view>
-      <view class="home-self-item home-book-item">
+      <view bindtap="goDoctor2" data-index="8" class="home-self-item home-book-item">
         <image class="home-self-img" src="/assets/png/肠胃.png"></image>
-        <view class="home-self-text">中风</view>
+        <view class="home-self-text">健康老年</view>
       </view>
     </view>
   </view>

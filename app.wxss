@@ -17,4 +17,21 @@
   box-shadow: 0 0 10rpx 2rpx #eee;
   padding-bottom: 20rpx;
   padding-left: 4vw;
+  /* display: flex;
+  align-items: center; */
+}
+
+/* 返回按钮 */
+.page-back-wrap {
+  display: flex;
+  align-items: center;
+}
+.page-back {
+  width: 14rpx;
+  height: 14rpx;
+  border: 6rpx solid black;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-45deg);
+  margin-right: 12rpx;
 }

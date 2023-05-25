@@ -1,2 +1,21 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
+
+  <view class="page-title" style="height: {{(top + height) + 'px' }}" >
+    <view class="page-back-wrap">
+      <view>个人中心</view>
+    </view>
+  </view>
+
+  <view class="container">
+  <image class="avatar" src="/assets/png/人物.png"></image>
+  <view class="phone">{{phoneNumber}}</view>
+  <view class="sub-items">
+    <view class="sub-item">消息订阅</view>
+    <view class="sub-item">体检预约</view>
+    <view class="sub-item">报告更新</view>
+    <view class="sub-item">个人管理</view>
+  </view>
+</view>
+
+</view>

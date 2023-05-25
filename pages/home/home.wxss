@@ -22,8 +22,50 @@
 
 /* 广告 */
 .home-add {
-  height: 13vh;
+  /* height: 13vh; */
   overflow: hidden;
+  background: linear-gradient(to right, #FF5F6D, #FFC371);
+  font-family: 'Arial', sans-serif;
+  border-radius: 13rpx 13rpx 0 0;
+  padding: 50rpx 20rpx;
+  color: #FFFFFF;
+  font-size: 48rpx;
+  letter-spacing: 2rpx;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.home-big-line {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  justify-content: space-between;
+}
+.home-big-left {
+  margin-left: 40rpx;
+}
+.home-big {
+  font-size: 58rpx;
+  margin-right: 40rpx;
+}
+.home-big-line2 {
+  margin-top: 19rpx;
+  justify-content: center;
+  animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50rpx);
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .home-add-img {
   height: 10vh;
@@ -34,17 +76,18 @@
 /* 预约体检 */
 .home-main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: rgb(248, 247, 247);
-  border-radius: 12rpx;
+  border-radius: 0 0 12rpx 12rpx;
   padding: 20rpx 0 40rpx 0;
 }
 .home-main-item {
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0 20rpx;
+  text-align: left;
 }
 .home-main-img {
   /* TODO 宽高待定 */
@@ -62,7 +105,7 @@
   color: #4d4d4d;
 }
 
-/* 加项定制 */
+/* 专家团队、呵护健康 */
 .home-dingzhi {
   display: flex;
   align-items: center;
@@ -88,7 +131,7 @@
   margin-top: 10rpx;
 }
 
-/* 个性化服务 */
+/* 资深医生 */
 .home-self {
   margin-top: 60rpx;
 }
@@ -117,7 +160,7 @@
   font-size: 24rpx;
 }
 
-/* 健康宝典 */
+/* 健康咨询 */
 .home-book-body {
   justify-content: space-between;
 }

@@ -1,0 +1,22 @@
+<!--pages/doctor2/index.wxml-->
+
+
+<!-- 健康资讯 -->
+
+
+
+
+<view class="doctor2 page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
+
+<view class="page-title" style="height: {{(top + height) + 'px' }}" bindtap="goBack">
+  <view class="page-back-wrap">
+      <view class="page-back">
+      </view>
+      <view>{{title}}</view>
+  </view>
+</view>
+
+<view class="dorcotr1-text" wx:for="{{text}}">
+  - {{item}}
+</view>
+</view>

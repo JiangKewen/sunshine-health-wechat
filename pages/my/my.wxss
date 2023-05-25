@@ -1,1 +1,35 @@
 /* pages/my/my.wxss */
+
+/* .my, .page-title {
+  background-color: #f5f8fa;
+}
+.my {
+  height: 100vh;
+  box-sizing: border-box;
+} */
+
+.container {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.phone {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.sub-items {
+  margin-top: 20px;
+}
+
+.sub-item {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

@@ -1,2 +1,62 @@
 /* pages/get/get.wxss */
 
+.get, .page-title {
+  background-color: #f5f8fa;
+}
+.get {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 50rpx;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  width: 80px;
+  font-size: 24rpx;
+}
+
+.input {
+  flex: 1;
+  padding: 13rpx 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 4rpx;
+  font-size: 30rpx;
+}
+
+.code-button {
+  padding: 15rpx 7rpx;
+  border: none;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  margin-left: 10px !important;
+  width: 14vw !important;
+  height: 100%;
+  margin-left: 6rpx;
+}
+
+.code-disabled {
+  background-color: #ccc;
+}
+
+.submit-button {
+  display: block;
+  width: 60vw !important;
+  padding: 20rpx;
+  border: none;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 4rpx;
+  font-size: 30rpx;
+  margin-top: 160rpx;
+}
