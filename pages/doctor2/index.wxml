@@ -10,15 +10,17 @@
 
   <view class="doctor2-title page-title" style="height: {{(top + height) + 'px' }}" bindtap="goBack">
     <view class="page-back-wrap">
-      <view class="page-back">
+      <view class="doctor2-page-back page-back">
       </view>
       <view>{{title}}</view>
     </view>
   </view>
 
-  <image class="bg-ctx-img" mode="aspectFit" src="/assets/WechatIMG30968.jpeg" alt="" />
+  <!-- <image class="bg-ctx-img" mode="aspectFit" src="/assets/WechatIMG30968.jpeg" alt="" /> -->
 
-  <view class="doctor2-text" wx:for="{{text}}">
-    {{item}}
+  <view class="doctor2-img-wrap"  style="margin-top:{{-(top+height + top/2) +'px'}}">
+    <view  wx:for="{{img}}" wx:key="index">
+      <image class="doctor2-img" src="{{item}}" mode="widthFix"/>
+    </view>
   </view>
 </view>

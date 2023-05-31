@@ -13,7 +13,7 @@
     <view class="my-infos">
       <image class="my-info-img" src="/assets/png/人物.png"></image>
       <view class="my-info-name">
-        asdgsag
+        <!-- asdgsag -->
       </view>
     </view>
     <!-- <view class="phone">{{phoneNumber}}</view> -->

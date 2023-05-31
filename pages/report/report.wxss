@@ -5,6 +5,10 @@
   min-height: 100vh;
   box-sizing: border-box;
 }
+.report-page-title {
+  background: #62b7f9;
+  color: #fff;
+}
 
 /* 获取报告 */
 .report-function {

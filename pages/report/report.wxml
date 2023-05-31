@@ -1,21 +1,21 @@
 <!--pages/report/report.wxml-->
 <view class="report page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
 
-  <view class="page-title" style="height: {{(top + height) + 'px' }}">
+  <view class="report-page-title page-title" style="height: {{(top + height) + 'px' }}">
     <view>体检报告</view>
   </view>
 
   <view class="report-function">
     <view class="report-f-item" bindtap="goGet">
-      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <image class="report-f-img" src="/assets/report/WechatIMG31417.png"></image>
       <view class="report-f-text">获取报告</view>
     </view>
     <view class="report-f-item" bindtap="zhinan">
-      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <image class="report-f-img" src="/assets/report/WechatIMG31416.png"></image>
       <view class="report-f-text">解读指南</view>
     </view>
     <view class="report-f-item" bindtap="jianyi">
-      <image class="report-f-img" src="/assets/png/查询报告.png"></image>
+      <image class="report-f-img" src="/assets/report/WechatIMG31418.png"></image>
       <view class="report-f-text">健康建议</view>
     </view>
   </view>

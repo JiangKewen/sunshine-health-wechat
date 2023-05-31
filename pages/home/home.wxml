@@ -71,37 +71,37 @@
     <view class="home-self-body home-book-body">
       <view bindtap="goDoctor2" data-index="1" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/失眠.png"></image>
-        <view class="home-self-text">饮食与营养</view>
+        <view class="home-self-text">失眠</view>
       </view>
       <view bindtap="goDoctor2" data-index="2" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/脱发.png"></image>
-        <view class="home-self-text">健身与运动</view>
+        <view class="home-self-text">脱发</view>
       </view>
       <view bindtap="goDoctor2" data-index="3" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/骨质疏松.png"></image>
-        <view class="home-self-text">心理健康</view>
+        <view class="home-self-text">骨质疏松</view>
       </view>
       <view bindtap="goDoctor2" data-index="4" class="home-self-item home-book-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/中风.png"></image>
-        <view class="home-self-text">疾病预防</view>
+        <view class="home-self-text">中风</view>
       </view>
     </view>
     <view class="home-self-body home-book-body">
       <view bindtap="goDoctor2" data-index="5" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/甲状腺.png"></image>
-        <view class="home-self-text">慢性病管理</view>
+        <view class="home-self-text">甲亢</view>
       </view>
       <view bindtap="goDoctor2" data-index="6" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/胃癌.png"></image>
-        <view class="home-self-text">妇女健康</view>
+        <view class="home-self-text">胃癌</view>
       </view>
       <view bindtap="goDoctor2" data-index="7" class="home-self-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/HPV.png"></image>
-        <view class="home-self-text">儿童健康</view>
+        <view class="home-self-text">HPV</view>
       </view>
       <view bindtap="goDoctor2" data-index="8" class="home-self-item home-book-item">
         <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/大肠癌.png"></image>
-        <view class="home-self-text">健康老年</view>
+        <view class="home-self-text">大肠癌</view>
       </view>
     </view>
   </view>
@@ -111,10 +111,10 @@
   <view class="home-self home-tuijian">
     <view class="home-self-title home-tuijian-title">推荐分院</view>
     <view class="home-tuijian-name">
-      杭州富阳分院
+      富阳阳光健康体检中心
     </view>
     <view class="home-tuijian-address">
-      山西省晋城市城区红星西街2519号二层、三层 (爱物学校对面)
+      浙江省杭州市富阳区百川街81号
     </view>
     <image src="/assets/png/WX20230530-220852@2x.png" mode="aspectFill" class="home-tuijian-img"/>
   </view>

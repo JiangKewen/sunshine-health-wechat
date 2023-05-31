@@ -66,6 +66,96 @@ const pages = {
     ],
   },
 };
+const images = {
+  1: {
+   title: '失眠',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/6.png'
+   ]
+  },
+  2: {
+   title: '脱发',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/6.png'
+   ]
+  },
+  3: {
+   title: '骨质疏松',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/5.png'
+   ]
+  },
+  4: {
+   title: '中风',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/6.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/7.png'
+   ]
+  },
+  5: {
+   title: '甲亢',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/6.png'
+   ]
+  },
+  6: {
+   title: '胃癌',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/6.png'
+   ]
+  },
+  7: {
+   title: 'HPV',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/6.png'
+   ]
+  },
+  8: {
+   title: '大肠癌',
+   imgs: [
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/1.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/2.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/3.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/4.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/5.png',
+    'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/6.png'
+   ]
+  },
+ }
 
 Page({
 
@@ -77,17 +167,19 @@ Page({
     height: 0,
 
     title: '',
-    text: []
+    text: [],
+    img: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const data = pages[options.id || 1]
+    const data = images[options.id || 1]
     this.setData({
       title: data.title,
-      text: data.text
+      // text: data.text,
+      img: data.imgs
     })
   },
 

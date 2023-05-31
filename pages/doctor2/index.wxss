@@ -1,17 +1,33 @@
 /* pages/doctor2/index.wxss */
 
 .doctor2 {
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-  background: linear-gradient(60deg, #599ff8, #a5d3f9);
+  background: linear-gradient(60deg, #63b7f9, #569df8);
 }
 .doctor2-title {
   background: transparent;
   box-shadow: none;
+  background: #62b7f9;
+  color: #fff;
+}
+.doctor2-page-back {
+  border-color: #fff;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .doctor2-text {
   text-indent: 2em;
   line-height: 1.6em;
   margin-bottom: 28rpx;
+}
+
+.doctor2-img-wrap {
+  margin: 0 -4vw;
+}
+.doctor2-img {
+  width: 100%;
+  /* height: fit-content; */
+  /* width: 100vw; */
 }
