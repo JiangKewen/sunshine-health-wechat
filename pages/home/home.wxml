@@ -2,34 +2,34 @@
 <view class="home page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
 
   <view class="home-title" style="height: {{(top + height) + 'px' }}">
-    <view class="home-title-text">富阳健康体检医院</view>
+    <view class="home-title-text">阳光健康管理中心</view>
   </view>
 
   <view class="home-add">
     <!-- <image class="home-add-img" src="/assets/png/add.png" mode="aspectFill"></image> -->
     <view class="home-big-line">
-      <view class="home-big-left">
+      <!-- <view class="home-big-left">
         欢迎来到
-      </view>
+      </view> -->
       <view class="home-big">
-        富阳体检医院
+        阳光健康管理中心
       </view>
     </view>
     <view class="home-big-line home-big-line2">
-      专注您的健康，打造全面的体检服务！
+      牵手民众体检，共享健康人生！
     </view>
   </view>
 
   <view class="home-main">
     <view class="home-main-item">
-      <image class="home-main-img" src="/assets/png/预约.png" mode="aspectFit"></image>
+      <image class="home-main-img" src="/assets/home/yuyue.png" mode="aspectFit"></image>
       <view class="home-main-info">
         <view class="home-main-title">预约体检</view>
         <view class="home-main-text">便捷预约</view>
       </view>
     </view>
     <view class="home-main-item" bindtap="goGet">
-      <image class="home-main-img" src="/assets/png/查询报告.png" mode="aspectFit"></image>
+      <image class="home-main-img" src="/assets/home/getreport.png" mode="aspectFit"></image>
       <view class="home-main-info">
         <view class="home-main-title">查询报告</view>
         <view class="home-main-text">轻松查看</view>
@@ -37,7 +37,7 @@
     </view>
   </view>
 
-  <view class="home-dingzhi">
+  <!-- <view class="home-dingzhi">
     <view class="home-dingzhi-item" bindtap="goHome1">
       <view class="home-dingzhi-title">专家团队</view>
       <view class="home-dingzhi-text">专业的医疗服务</view>
@@ -46,9 +46,9 @@
       <view class="home-dingzhi-title">呵护健康</view>
       <view class="home-dingzhi-text">个性化的健康建议</view>
     </view>
-  </view>
+  </view> -->
 
-  <view class="home-self">
+  <!-- <view class="home-self">
     <view class="home-self-title">资深医生和专业技术人员</view>
     <view class="home-self-body">
       <view class="home-self-item" bindtap="goDoctor1" data-index="1">
@@ -64,45 +64,58 @@
         <view class="home-self-text">专科医疗服务</view>
       </view>
     </view>
-  </view>
+  </view> -->
 
   <view class="home-self home-book">
     <view class="home-self-title">健康资讯</view>
     <view class="home-self-body home-book-body">
       <view bindtap="goDoctor2" data-index="1" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/人物.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/失眠.png"></image>
         <view class="home-self-text">饮食与营养</view>
       </view>
       <view bindtap="goDoctor2" data-index="2" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/牙齿.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/脱发.png"></image>
         <view class="home-self-text">健身与运动</view>
       </view>
       <view bindtap="goDoctor2" data-index="3" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/骨质疏松.png"></image>
         <view class="home-self-text">心理健康</view>
       </view>
       <view bindtap="goDoctor2" data-index="4" class="home-self-item home-book-item">
-        <image class="home-self-img" src="/assets/png/肠胃.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/中风.png"></image>
         <view class="home-self-text">疾病预防</view>
       </view>
     </view>
     <view class="home-self-body home-book-body">
       <view bindtap="goDoctor2" data-index="5" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/人物.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/甲状腺.png"></image>
         <view class="home-self-text">慢性病管理</view>
       </view>
       <view bindtap="goDoctor2" data-index="6" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/牙齿.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/胃癌.png"></image>
         <view class="home-self-text">妇女健康</view>
       </view>
       <view bindtap="goDoctor2" data-index="7" class="home-self-item">
-        <image class="home-self-img" src="/assets/png/预约.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/HPV.png"></image>
         <view class="home-self-text">儿童健康</view>
       </view>
       <view bindtap="goDoctor2" data-index="8" class="home-self-item home-book-item">
-        <image class="home-self-img" src="/assets/png/肠胃.png"></image>
+        <image class="home-self-img2" mode="aspectFill" src="/assets/home/jianyi/大肠癌.png"></image>
         <view class="home-self-text">健康老年</view>
       </view>
     </view>
+  </view>
+
+
+
+  <view class="home-self home-tuijian">
+    <view class="home-self-title home-tuijian-title">推荐分院</view>
+    <view class="home-tuijian-name">
+      杭州富阳分院
+    </view>
+    <view class="home-tuijian-address">
+      山西省晋城市城区红星西街2519号二层、三层 (爱物学校对面)
+    </view>
+    <image src="/assets/png/WX20230530-220852@2x.png" mode="aspectFill" class="home-tuijian-img"/>
   </view>
 </view>

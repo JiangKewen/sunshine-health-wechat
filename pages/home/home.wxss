@@ -8,10 +8,11 @@
   top: 0;
   left: 0;
   right: 0;
+  /* background: linear-gradient(to bottom, rgb(183, 214, 255), #fff); */
   background: #fff;
   display: flex;
   align-items: flex-end;
-  box-shadow: 0 0 10rpx 2rpx #eee;
+  /* box-shadow: 0 0 10rpx 2rpx #eee; */
   padding-bottom: 20rpx;
   padding-left: 4vw;
 }
@@ -25,9 +26,11 @@
   /* height: 13vh; */
   overflow: hidden;
   background: linear-gradient(to right, #FF5F6D, #FFC371);
+  /* background: linear-gradient(to right, #3a813a, #0bb91a); */
   font-family: 'Arial', sans-serif;
   border-radius: 13rpx 13rpx 0 0;
   padding: 50rpx 20rpx;
+  margin-bottom: 30rpx;
   color: #FFFFFF;
   font-size: 48rpx;
   letter-spacing: 2rpx;
@@ -40,7 +43,7 @@
   display: flex;
   align-items: center;
   font-size: 32rpx;
-  justify-content: space-between;
+  justify-content: center;
 }
 .home-big-left {
   margin-left: 40rpx;
@@ -50,7 +53,8 @@
   margin-right: 40rpx;
 }
 .home-big-line2 {
-  margin-top: 19rpx;
+  margin-top: 22rpx;
+  letter-spacing: 8rpx;
   justify-content: center;
   animation: slideIn 2s ease-in-out;
 }
@@ -91,9 +95,9 @@
 }
 .home-main-img {
   /* TODO 宽高待定 */
-  width: 120rpx;
-  height: 120rpx;
-  margin-right: 8rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 16rpx;
 }
 .home-main-title {
   font-size: 36rpx;
@@ -169,4 +173,30 @@
 }
 .home-book-item {
   margin-right: 0;
+}
+.home-self-img2 {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+/* 推荐分院 */
+.home-tuijian-title {
+  margin-top: 80rpx;
+}
+.home-tuijian-name {
+  font-size: 32rpx;
+  font-weight: bolder;
+  margin-bottom: 13rpx;
+}
+.home-tuijian-address {
+  font-size: 24rpx;
+  opacity: 0.5;
+  padding-right: 15vw;
+  box-sizing: border-box;
+  line-height: 1.2em;
+  margin-bottom: 30rpx;
+}
+.home-tuijian-img {
+  border-radius: 20rpx;
+  width: 100%;
 }

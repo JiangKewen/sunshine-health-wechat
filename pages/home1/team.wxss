@@ -1,1 +1,16 @@
 /* pages/home1/team.wxss */
+.home1 {
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(60deg, #599ff8, #a5d3f9);
+}
+.home1-title {
+  background: transparent;
+  box-shadow: none;
+}
+
+.home1-text {
+  text-indent: 2em;
+  line-height: 1.6em;
+  margin-bottom: 10rpx;
+}

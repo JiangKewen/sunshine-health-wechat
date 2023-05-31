@@ -3,8 +3,6 @@
     "pages/home/home",
     "pages/report/report",
     "pages/my/my",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/get/get",
     "pages/home1/team",
     "pages/home2/help",
@@ -16,20 +14,20 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "./assets/test/icon-black.png",
-        "selectedIconPath": "./assets/test/icon-blue.png"
+        "iconPath": "./assets/tabbar/home.png",
+        "selectedIconPath": "./assets/tabbar/home-selected.png"
       },
       {
         "pagePath": "pages/report/report",
         "text": "报告",
-        "iconPath": "./assets/test/icon-black.png",
-        "selectedIconPath": "./assets/test/icon-blue.png"
+        "iconPath": "./assets/tabbar/report.png",
+        "selectedIconPath": "./assets/tabbar/report-selected.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "./assets/test/icon-black.png",
-        "selectedIconPath": "./assets/test/icon-blue.png"
+        "iconPath": "./assets/tabbar/my.png",
+        "selectedIconPath": "./assets/tabbar/my-selected.png"
       }
     ]
   },
@@ -38,7 +36,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "富阳健康体检医院",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "backgroundColor": "#fff"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -14,6 +14,7 @@ Page({
     phone: '', // 手机号
     id: '', // 身份证号
     code: '', // 验证码
+    disabledPhone: true,
   },
 
   /**
@@ -79,9 +80,10 @@ Page({
   },
 
   goBack() {
-    wx.switchTab({
-      url: '/pages/home/home',
-    })
+    // wx.switchTab({
+    //   url: '/pages/home/home',
+    // })
+    wx.navigateBack()
   },
 
   // 姓名
@@ -91,10 +93,11 @@ Page({
     });
   },
 
-   // 手机号输入
-   onPhoneInput(event) {
+  // 手机号输入
+  onPhoneInput(event) {
     this.setData({
       phone: event.detail.value,
+      disabledPhone: !/^[1][3,4,5,7,8][0-9]{9}$/.test(event.detail.value),
     });
   },
 
@@ -162,7 +165,12 @@ Page({
 
   // 提交表单
   submitForm() {
-    const { name, phone, id, code } = this.data;
+    const {
+      name,
+      phone,
+      id,
+      code
+    } = this.data;
     console.log(name, phone, id, code);
     wx.setStorageSync('report', '[a]')
 

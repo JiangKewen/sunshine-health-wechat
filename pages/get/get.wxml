@@ -1,7 +1,7 @@
 <!--pages/get/get.wxml-->
 <view class="get page-wrap" style="padding-top:{{top+height + top/2 +'px'}}">
 
-  <view class="page-title" style="height: {{(top + height) + 'px' }}" bindtap="goBack">
+  <view class="get-page-title page-title" style="height: {{(top + height) + 'px' }}" bindtap="goBack">
     <view class="page-back-wrap">
       <view class="page-back">
       </view>
@@ -11,21 +11,21 @@
 
   <view class="container">
     <view class="form-group">
-      <text class="label">姓名：</text>
-      <input class="input" type="number" placeholder="请输入姓名" bindinput="onNameInput" />
+      <!-- <text class="label">姓名：</text> -->
+      <input class="input" type="text" placeholder="请输入姓名" bindinput="onNameInput" />
     </view>
     <view class="form-group">
-      <text class="label">手机号：</text>
+      <!-- <text class="label">手机号：</text> -->
       <input class="input" type="number" placeholder="请输入手机号" bindinput="onPhoneInput" />
     </view>
     <view class="form-group">
-      <text class="label">身份证：</text>
-      <input class="input" type="text" placeholder="请输入身份证号码" bindinput="onIdInput" />
+      <!-- <text class="label">身份证：</text> -->
+      <input class="input" type="number" placeholder="请输入身份证号码" bindinput="onIdInput" />
     </view>
     <view class="form-group">
-      <text class="label">手机验证码：</text>
+      <!-- <text class="label">手机验证码：</text> -->
       <input class="input" type="number" placeholder="请输入验证码" bindinput="onCodeInput" />
-      <button class="code-button" disabled="{{!phone}}" wx:if="{{!isCodeSent}}" bindtap="sendCode">获取</button>
+      <button class="code-button" disabled="{{disabledPhone}}" wx:if="{{!isCodeSent}}" bindtap="sendCode">获取</button>
       <button class="code-button code-disabled" wx:if="{{isCodeSent}}" disabled>{{countDown}}s</button>
     </view>
     <button class="submit-button" bindtap="submitForm">获取报告</button>

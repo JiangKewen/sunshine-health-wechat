@@ -1,1 +1,17 @@
 /* pages/doctor2/index.wxss */
+
+.doctor2 {
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(60deg, #599ff8, #a5d3f9);
+}
+.doctor2-title {
+  background: transparent;
+  box-shadow: none;
+}
+
+.doctor2-text {
+  text-indent: 2em;
+  line-height: 1.6em;
+  margin-bottom: 28rpx;
+}

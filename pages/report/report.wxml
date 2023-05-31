@@ -10,11 +10,11 @@
       <image class="report-f-img" src="/assets/png/查询报告.png"></image>
       <view class="report-f-text">获取报告</view>
     </view>
-    <view class="report-f-item">
+    <view class="report-f-item" bindtap="zhinan">
       <image class="report-f-img" src="/assets/png/查询报告.png"></image>
       <view class="report-f-text">解读指南</view>
     </view>
-    <view class="report-f-item">
+    <view class="report-f-item" bindtap="jianyi">
       <image class="report-f-img" src="/assets/png/查询报告.png"></image>
       <view class="report-f-text">健康建议</view>
     </view>

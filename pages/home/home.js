@@ -101,5 +101,30 @@ Page({
     wx.navigateTo({
       url: '/pages/doctor2/index?id='+id,
     })
+  },
+
+
+  startX: 0,
+  startY: 0,
+
+  touchstart(e) {
+    this.startX = e.touches[0].clientX;
+    this.startY = e.touches[0].clientY;
+  },
+
+  touchmove(e) {
+    const { clientX, clientY } = e.touches[0];
+    const deltaX = clientX - this.startX;
+    const deltaY = clientY - this.startY;
+
+    // 判断滑动方向，只有水平滑动距离大于垂直滑动距离时才触发切换
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX < -120) {
+        // 向左滑动超过50px，切换到下一页
+        wx.switchTab({
+          url: '/pages/report/report'
+        });
+      }
+    }
   }
 })
