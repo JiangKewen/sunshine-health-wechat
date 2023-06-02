@@ -15,6 +15,8 @@ Page({
     id: '', // 身份证号
     code: '', // 验证码
     disabledPhone: true,
+
+    wait: false,
   },
 
   /**
@@ -165,14 +167,16 @@ Page({
 
   // 提交表单
   submitForm() {
+    if (this.data.wait) return
+
     const {
       name,
       phone,
       id,
       code
     } = this.data;
-    console.log(name, phone, id, code);
-    wx.setStorageSync('report', '[a]')
+    // console.log(name, phone, id, code);
+    // wx.setStorageSync('report', '[a]')
 
     if (!name || !phone || !id || !code) {
       wx.showToast({
@@ -180,6 +184,10 @@ Page({
         icon: 'error'
       })
     } else {
+      wx.clearStorageSync()
+      this.setData({
+        wait: true
+      })
       wx.request({
         url: `https://jiajianup.top/api/wx/record/list?idName=${name}&idCard=${id}&code=${code}&mobile=${phone}`,
         success(res) {
@@ -188,13 +196,18 @@ Page({
             console.log('res报告', res);
             // TODO 处理
             wx.setStorageSync('report', JSON.stringify(res.data.data))
-            wx.switchTab({
-              url: '/pages/report/report',
-            })
+            setTimeout(() => {
+              wx.switchTab({
+                url: '/pages/report/report',
+              })
+            }, 500)
           } else {
             wx.showToast({
               title: res?.data?.msg || '获取报告失败',
               icon: 'error'
+            })
+            this.setData({
+              wait: false
             })
           }
         },
@@ -202,6 +215,9 @@ Page({
           wx.showToast({
             title: err.message || '获取报告失败',
             icon: 'error'
+          })
+          this.setData({
+            wait: false
           })
         }
       })

@@ -33,7 +33,7 @@
       <view class="report-info" wx:for="{{item}}" wx:for-item="report" wx:key="id">
         <view class="report-info-names">
           <view class="report-info-names-left">
-            <image class="report-name-img" src="/assets/png/人物.png"></image>
+            <image class="report-name-img" src="/assets/my/个人中心头像.png"></image>
             <view class="report-name-text">{{report.personName}}</view>
           </view>
           <view class="report-info-names-right">PDF</view>
@@ -47,7 +47,7 @@
           <view class="report-form-label">地址</view>
           <view class="report-form-text">富阳健康体检医院</view>
         </view>
-        <view class="report-btn" bindtap="readPdf">立即查看</view>
+        <view class="report-btn" data-name="{{report.personName}}" data-date="{{report.recordDate}}" data-ossUrl="{{report.ossUrl}}" bindtap="readPdf">立即查看</view>
       </view>
     </view>
   </view>

@@ -108,7 +108,7 @@
 
 
 
-  <view class="home-self home-tuijian">
+  <!-- <view class="home-self home-tuijian">
     <view class="home-self-title home-tuijian-title">推荐分院</view>
     <view class="home-tuijian-name">
       富阳阳光健康体检中心
@@ -117,5 +117,5 @@
       浙江省杭州市富阳区百川街81号
     </view>
     <image src="/assets/png/WX20230530-220852@2x.png" mode="aspectFill" class="home-tuijian-img"/>
-  </view>
+  </view> -->
 </view>

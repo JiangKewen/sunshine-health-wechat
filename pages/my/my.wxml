@@ -11,7 +11,7 @@
 
   <view class="my-container">
     <view class="my-infos">
-      <image class="my-info-img" src="/assets/png/人物.png"></image>
+      <image class="my-info-img" src="/assets/my/个人中心头像.png"></image>
       <view class="my-info-name">
         <!-- asdgsag -->
       </view>

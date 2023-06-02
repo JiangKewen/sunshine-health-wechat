@@ -25,6 +25,7 @@ Page({
     top: 0,
     height: 0,
 
+    wait: false,
     storage: JSON.parse(wx.getStorageSync('report') || '[]'),
     reports: result(JSON.parse(wx.getStorageSync('report') || '[]')),
   },
@@ -98,11 +99,20 @@ Page({
 
   },
 
-  readPdf() {
-    console.log('点击');
+  readPdf(e) {
+    if (this.data.wait) return
+    this.setData({
+      wait: true
+    })
+    setTimeout(() => {
+      this.setData({
+        wait: false
+      })
+    }, 800);
+    console.log('点击', e.target.dataset.ossurl);
     wx.downloadFile({
-      url: 'https://jiajianup.top/upload/dev/sunshine-health-examination/default/9c8d1c1ff3414556bdbd8cba81d0d60b.png',
-      filePath: wx.env.USER_DATA_PATH + "/" + '孙悟空' + ".pdf",
+      url: `https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com${e.target.dataset.ossurl}`,
+      filePath: wx.env.USER_DATA_PATH + "/" + e.target.dataset.name + '-' + e.target.dataset.date + ".pdf",
       success(res) {
         console.log('res1', res);
         if (res.statusCode === 200) {

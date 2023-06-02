@@ -72,9 +72,17 @@ Page({
   },
 
   goGet() {
-    wx.navigateTo({
-      url: '/pages/get/get',
-    })
+    const report = wx.getStorageSync('report')
+    console.log('report', report);
+    if (report && JSON.parse(report).length) {
+      wx.switchTab({
+        url: '/pages/report/report',
+      })
+    } else {
+      wx.navigateTo({
+        url: '/pages/get/get',
+      })
+    }
     // wx.switchTab({
     //   url: '/pages/report/report'
     // })

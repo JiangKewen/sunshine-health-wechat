@@ -69,6 +69,7 @@ const pages = {
 const images = {
   1: {
    title: '失眠',
+   folderName: 'sm',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%B1%E7%9C%A0/2.png',
@@ -80,6 +81,7 @@ const images = {
   },
   2: {
    title: '脱发',
+   folderName: 'tf',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%84%B1%E5%8F%91/2.png',
@@ -91,6 +93,7 @@ const images = {
   },
   3: {
    title: '骨质疏松',
+   folderName: 'gzss',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E9%AA%A8%E8%B4%A8%E7%96%8F%E6%9D%BE/2.png',
@@ -101,6 +104,7 @@ const images = {
   },
   4: {
    title: '中风',
+   folderName: 'zf',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E4%B8%AD%E9%A3%8E/2.png',
@@ -113,6 +117,7 @@ const images = {
   },
   5: {
    title: '甲亢',
+   folderName: 'jk',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E7%94%B2%E4%BA%A2/2.png',
@@ -124,6 +129,7 @@ const images = {
   },
   6: {
    title: '胃癌',
+   folderName: 'wa',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E8%83%83%E7%99%8C/2.png',
@@ -135,6 +141,7 @@ const images = {
   },
   7: {
    title: 'HPV',
+   folderName: 'hpv',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/HPV/2.png',
@@ -146,6 +153,7 @@ const images = {
   },
   8: {
    title: '大肠癌',
+   folderName: 'dca',
    imgs: [
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/1.png',
     'https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com/upload/dev/sunshine-health-examination/default/%E5%AE%9D%E5%85%B8png/%E5%A4%A7%E8%82%A0%E7%99%8C/2.png',
@@ -176,10 +184,38 @@ Page({
    */
   onLoad(options) {
     const data = images[options.id || 1]
+
     this.setData({
       title: data.title,
       // text: data.text,
-      img: data.imgs
+      // img: data.imgs
+    })
+    wx.showLoading({
+      title: '获取数据中',
+    })
+    wx.request({
+      url: `https://jiajianup.top/api/common/upload/getFolderName?folderName=${data.folderName}`,
+      success: res => {
+        const imgs = res.data.data || []
+        console.log(res.data.data);
+        const img = imgs.map(item => {
+          console.log(item);
+          item = 'data:image/png;base64,' + item
+          return item.replace(/[\r\n]/g, '')
+        })
+        console.log('img', img);
+        this.setData({
+          img
+        })
+        wx.hideLoading()
+      },
+      fail: err => {
+        wx.showToast({
+          title: '获取失败',
+          icon: 'error'
+        })
+        wx.hideLoading()
+      },
     })
   },
 

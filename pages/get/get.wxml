@@ -20,7 +20,7 @@
     </view>
     <view class="form-group">
       <!-- <text class="label">身份证：</text> -->
-      <input class="input" type="number" placeholder="请输入身份证号码" bindinput="onIdInput" />
+      <input class="input" type="text" placeholder="请输入身份证号码" bindinput="onIdInput" />
     </view>
     <view class="form-group">
       <!-- <text class="label">手机验证码：</text> -->
@@ -28,7 +28,7 @@
       <button class="code-button" disabled="{{disabledPhone}}" wx:if="{{!isCodeSent}}" bindtap="sendCode">获取</button>
       <button class="code-button code-disabled" wx:if="{{isCodeSent}}" disabled>{{countDown}}s</button>
     </view>
-    <button class="submit-button" bindtap="submitForm">获取报告</button>
+    <button class="submit-button" loading="{{wait}}" bindtap="submitForm">获取报告</button>
   </view>
 
 </view>
