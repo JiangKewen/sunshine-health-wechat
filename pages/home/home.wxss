@@ -25,8 +25,8 @@
 .home-add {
   /* height: 13vh; */
   overflow: hidden;
-  background: linear-gradient(to right, #FF5F6D, #FFC371);
-  /* background: linear-gradient(to right, #3a813a, #0bb91a); */
+  /* background: linear-gradient(to right, #FF5F6D, #FFC371); */
+  background: linear-gradient(to right, #2076bd, rgb(9, 149, 231));
   font-family: 'Arial', sans-serif;
   border-radius: 13rpx 13rpx 0 0;
   padding: 50rpx 20rpx;

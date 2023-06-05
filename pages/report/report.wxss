@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 .report-page-title {
-  background: #62b7f9;
+  background: rgb(32, 162, 238);
   color: #fff;
 }
 

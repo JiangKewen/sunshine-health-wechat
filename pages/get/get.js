@@ -119,7 +119,7 @@ Page({
   // 发送验证码
   sendCode() {
     wx.request({
-      url: `https://jiajianup.top/api/wx/sms/send?mobile=${this.data.phone}`,
+      url: `https://sizehealth.top/api/wx/sms/send?mobile=${this.data.phone}`,
       success(res) {
         if (res.statusCode === 200 && res.data.code === 200) {
           wx.showToast({
@@ -189,7 +189,7 @@ Page({
         wait: true
       })
       wx.request({
-        url: `https://jiajianup.top/api/wx/record/list?idName=${name}&idCard=${id}&code=${code}&mobile=${phone}`,
+        url: `https://sizehealth.top/api/wx/record/list?idName=${name}&idCard=${id}&code=${code}&mobile=${phone}`,
         success(res) {
           console.log('res2', res);
           if (res.statusCode === 200 && res.data.code === 200) {

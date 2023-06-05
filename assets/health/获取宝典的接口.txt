@@ -1,0 +1,8 @@
+失眠：https://sizehealth.top/api/common/upload/getFolderName?folderName=sm
+大肠癌：https://sizehealth.top/api/common/upload/getFolderName?folderName=dca
+骨质疏松：https://sizehealth.top/api/common/upload/getFolderName?folderName=gzss
+HPV：https://sizehealth.top/api/common/upload/getFolderName?folderName=hpv
+甲亢：https://sizehealth.top/api/common/upload/getFolderName?folderName=jk
+脱发：https://sizehealth.top/api/common/upload/getFolderName?folderName=tf
+胃癌：https://sizehealth.top/api/common/upload/getFolderName?folderName=wa
+中风：https://sizehealth.top/api/common/upload/getFolderName?folderName=zf
