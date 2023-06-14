@@ -7,7 +7,8 @@
     "pages/home1/team",
     "pages/home2/help",
     "pages/doctor1/index",
-    "pages/doctor2/index"
+    "pages/doctor2/index",
+    "pages/xieyi/xieyi"
   ],
   "tabBar": {
     "list": [

@@ -47,7 +47,7 @@
           <view class="report-form-label">地址</view>
           <view class="report-form-text">富阳健康体检医院</view>
         </view>
-        <view class="report-btn" data-name="{{report.personName}}" data-date="{{report.recordDate}}" data-ossUrl="{{report.ossUrl}}" bindtap="readPdf">立即查看</view>
+        <view class="report-btn" data-name="{{report.personName}}" data-date="{{report.recordDate}}" data-ossurl="{{report.ossUrl}}" bindtap="readPdf">立即查看</view>
       </view>
     </view>
   </view>

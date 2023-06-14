@@ -1,0 +1,5 @@
+/* pages/xieyi/xieyi.wxss */
+
+.xieyit {
+  margin-top: 20rpx;
+}

@@ -17,6 +17,9 @@ Page({
     disabledPhone: true,
 
     wait: false,
+
+    aggree: 'aggree',
+    checked: false
   },
 
   /**
@@ -37,12 +40,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
+    const checked = Boolean(wx.getStorageSync('checked')) || false
+
+
     const res = wx.getMenuButtonBoundingClientRect()
     const top = res.top
     const height = res.height
     this.setData({
       top,
-      height
+      height,
+      checked
     })
   },
 
@@ -184,6 +191,13 @@ Page({
         icon: 'error'
       })
     } else {
+      if (!this.data.checked) {
+        wx.showToast({
+          title: '请同意协议',
+          icon: 'none'
+        })
+        return
+      }
       wx.clearStorageSync()
       this.setData({
         wait: true
@@ -222,6 +236,20 @@ Page({
         }
       })
     }
-
   },
+
+  checkboxChange(val) {
+    const aggree = val.detail.value.includes(this.data.aggree)
+    console.log('v', val, aggree, String(aggree));
+    this.setData({
+      checked: aggree
+    })
+    wx.setStorageSync('checked', aggree ? 1 : '')
+  },
+
+  goxieyi() {
+    wx.navigateTo({
+      url: '/pages/xieyi/xieyi',
+    })
+  }
 })

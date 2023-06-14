@@ -31,4 +31,13 @@
     <button class="submit-button" loading="{{wait}}" bindtap="submitForm">获取报告</button>
   </view>
 
+  <view class="xieyi-btn">
+    <checkbox-group bindchange="checkboxChange">
+              <checkbox value="{{aggree}}" checked="{{checked}}"/>
+        </checkbox-group>
+    <view bindtap="goxieyi">
+      富裕阳光健康小程序隐私保护指引
+    </view>
+  </view>
+
 </view>

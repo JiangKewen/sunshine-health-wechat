@@ -104,6 +104,9 @@ Page({
     this.setData({
       wait: true
     })
+    wx.showLoading({
+      title: '加载中',
+    })
     setTimeout(() => {
       this.setData({
         wait: false
@@ -111,10 +114,10 @@ Page({
     }, 800);
     console.log('点击', e.target.dataset.ossurl);
     wx.downloadFile({
-      url: `https://sunshine-health-examination.oss-cn-hangzhou.aliyuncs.com${e.target.dataset.ossurl}`,
+      url: `https://size-health.oss-cn-hangzhou.aliyuncs.com${e.target.dataset.ossurl}`,
       filePath: wx.env.USER_DATA_PATH + "/" + e.target.dataset.name + '-' + e.target.dataset.date + ".pdf",
       success(res) {
-        console.log('res1', res);
+        console.log('res123', res);
         if (res.statusCode === 200) {
           const tempFilePath = res.filePath
           wx.openDocument({
@@ -126,10 +129,12 @@ Page({
         } else {
           console.log('res', res);
         }
+        wx.hideLoading()
       },
       fail(err) {
         console.log('err', err.message);
-      }
+        wx.hideLoading()
+      },
     })
   },
 
